@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooper Siteworks, Inc. | Expert Sitework for the Lake of the Ozarks</title>
+    <meta name="description" content="Over 30 years of experience in excavation, septic systems, utilities, and demolition for residential and commercial projects in Kaiser, Missouri.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-white">
+                COOPER <span class="font-light">SITEWORKS</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#services" class="nav-link font-medium text-gray-200 hover:text-white transition-colors">Services</a>
+                <a href="#about" class="nav-link font-medium text-gray-200 hover:text-white transition-colors">About</a>
+                <a href="#portfolio" class="nav-link font-medium text-gray-200 hover:text-white transition-colors">Our Work</a>
+                <a href="#contact" class="nav-link font-medium text-gray-200 hover:text-white transition-colors">Contact</a>
+            </nav>
+            <div class="hidden md:block">
+                <a href="#contact" class="nav-link bg-[#F3EFEA] text-[#0D2C54] font-bold py-2 px-5 rounded-md hover:bg-gray-200 transition-all duration-300 shadow-lg">
+                    Free Estimate
+                </a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg id="menu-open-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    <svg id="menu-close-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0D2C54] shadow-lg absolute top-full left-0 w-full">
+            <nav class="flex flex-col items-center space-y-4 p-6">
+                <a href="#services" class="nav-link text-white hover:text-blue-200 font-medium py-2">Services</a>
+                <a href="#about" class="nav-link text-white hover:text-blue-200 font-medium py-2">About</a>
+                <a href="#portfolio" class="nav-link text-white hover:text-blue-200 font-medium py-2">Our Work</a>
+                <a href="#contact" class="nav-link text-white hover:text-blue-200 font-medium py-2">Contact</a>
+                <a href="#contact" class="nav-link w-full bg-[#F3EFEA] text-[#0D2C54] font-bold mt-4 py-3 px-5 rounded-md hover:bg-gray-200 transition-all duration-300 shadow-lg text-center">
+                    Request a Free Estimate
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center text-white bg-gray-800">
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+            <div class="hero-bg absolute inset-0 w-full h-full bg-cover bg-center"></div>
+            <div class="relative z-20 text-center px-6 animate-fade-in">
+                <h1 class="text-4xl md:text-7xl font-bold tracking-tight mb-4">Expert Sitework for the Lake of the Ozarks</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-8">From excavation and septic systems to utilities and demolition, we are your fully insured and certified partner for residential & commercial projects.</p>
+                <a href="#contact" class="nav-link bg-blue-600 text-white font-bold py-4 px-10 rounded-md hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-2xl text-lg">
+                    Get Your Free Estimate
+                </a>
+            </div>
+        </section>
+
+        <!-- TrustBar Section -->
+        <section class="animated-section bg-[#0D2C54] text-white py-16">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="p-4">
+                        <h3 id="years-counter" class="text-5xl font-bold text-blue-400">0+</h3>
+                        <p class="mt-2 text-gray-300">Years of Experience</p>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-5xl font-bold text-blue-400 flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>5.0</h3>
+                        <p class="mt-2 text-gray-300">Rating on Angi</p>
+                    </div>
+                    <div class="p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 mx-auto text-blue-400 mb-2"><path d="M20 13.38V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V18"></path><path d="m18 12.1-6-4.5-6 4.5"></path><path d="m18 9-6-4.5-6 4.5"></path><path d="M20 13.38V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7.38"></path><path d="M12 22V18"></path></svg>
+                        <p class="mt-2 text-gray-300">Fully Insured & Bonded</p>
+                    </div>
+                    <div class="p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 mx-auto text-blue-400 mb-2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        <p class="mt-2 text-gray-300">State-Certified Installers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="animated-section bg-[#F3EFEA] py-24">
+            <div class="container mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-[#0D2C54]">Comprehensive Sitework Solutions</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-3xl mx-auto">From the ground down, we provide a full range of services for both residential and commercial projects.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service Cards Here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="animated-section bg-white py-24">
+            <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-[#0D2C54] mb-4">Your Partner in Quality Construction</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">For over three decades, Cooper Siteworks, Inc. has been a pillar of the construction community around the Lake of the Ozarks. We are a family-owned business dedicated to providing exceptional service, whether it's a large commercial development or a private residential project.</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Our membership with the Lake Area Builders Association and our state certifications are a testament to our commitment to upholding the highest industry standards. We believe in honest work, fair pricing, and building lasting relationships with our clients.</p>
+                    <a href="#contact" class="nav-link bg-blue-600 text-white font-bold py-3 px-6 rounded-md hover:bg-blue-700 transition-all">Learn More About Us</a>
+                </div>
+                <div class="relative h-96 rounded-lg shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Construction site" class="w-full h-full object-cover rounded-lg"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="animated-section bg-[#F3EFEA] py-24">
+            <div class="container mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-[#0D2C54]">Our Work in Action</h2>
+                    <p class="text-lg text-gray-600 mt-2">A portfolio of quality and precision.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <!-- Portfolio Images Here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="animated-section bg-white py-24">
+            <div class="container mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-[#0D2C54]">What Our Clients Say</h2>
+                    <p class="text-lg text-gray-600 mt-2">Our 5-star reputation is built on results.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Testimonial Cards Here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="animated-section bg-[#0D2C54] text-white py-24">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-4">Ready to start your project?</h2>
+                <p class="text-lg text-blue-200 max-w-2xl mx-auto mb-8">Contact us today for a free, no-obligation estimate. Let's discuss how we can bring your vision to life.</p>
+                <div class="max-w-4xl mx-auto bg-blue-900/50 p-8 rounded-lg shadow-2xl">
+                    <form id="contact-form">
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Your Name" required class="w-full bg-blue-900/70 border border-blue-700 rounded-md px-4 py-3 focus:ring-blue-500 focus:border-blue-500 transition"/>
+                            <input type="email" placeholder="Your Email" required class="w-full bg-blue-900/70 border border-blue-700 rounded-md px-4 py-3 focus:ring-blue-500 focus:border-blue-500 transition"/>
+                        </div>
+                        <textarea placeholder="Tell us about your project..." rows="6" required class="w-full bg-blue-900/70 border border-blue-700 rounded-md px-4 py-3 mb-6 focus:ring-blue-500 focus:border-blue-500 transition"></textarea>
+                        <button type="submit" class="bg-blue-600 font-bold py-3 px-12 rounded-md hover:bg-blue-700 transition-all">Send Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-bold text-white mb-4">Cooper Siteworks, Inc.</h3>
+            <p>Kaiser, Missouri 65047</p>
+            <div class="my-6 flex justify-center gap-6">
+                <a href="tel:573-348-4551" class="hover:text-white transition">Phone: (573) 348-4551</a>
+                <a href="mailto:info@coopersiteworks.com" class="hover:text-white transition">Email: info@coopersiteworks.com</a>
+            </div>
+            <p class="text-sm">&copy; 2024 Cooper Siteworks, Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
